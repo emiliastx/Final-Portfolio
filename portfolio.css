@@ -1,18 +1,31 @@
+:root {
+  --heading-font-family: "Poppins", sans-serif;
+  --main-green: rgb(11, 138, 100);
+  --secondary-green: rgb(163, 228, 208);
+}
+
 body {
-  background-color: rgb(11, 138, 100);
+  background-color: var(--main-green);
 }
 h1 {
   padding-top: 30px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--heading-font-family);
   font-size: 70px;
   color: white;
   font-weight: 200;
 }
 h2 {
   text-align: center;
-  color: rgb(163, 228, 208);
-  font-family: "Poppins", sans-serif;
+  color: var(--secondary-green);
+  font-family: var(--heading-font-family);
   font-weight: 600;
   font-size: 25px;
+}
+.profile-picture {
+  display: block;
+  margin: 0 auto;
+  border-radius: 100px;
+  max-width: 200px;
+  margin-top: 50px;
 }
