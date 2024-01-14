@@ -52,6 +52,15 @@ h2 {
   text-align: center;
   margin-top: 15px;
 }
+.learn-btn {
+  display: block;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: rgb(4, 117, 102);
+}
+
 .my-projects {
   text-align: center;
   margin-top: 30px;
@@ -61,7 +70,8 @@ h2 {
   font-weight: 300;
   color: white;
 }
-.col-6 {
+.col-6,
+.col-8 {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 60px;
@@ -79,13 +89,14 @@ h2 {
   color: var(--salmon);
   margin-bottom: 10px;
 }
-.project-text {
+.description-text {
   font-family: var(--secondary-font-family);
   font-size: 19px;
   font-weight: 300;
   color: white;
   line-height: 1.7;
 }
+.learn-btn,
 .launch-btn {
   margin-top: 10px;
   padding: 5px 10px 5px 10px;
@@ -96,6 +107,7 @@ h2 {
   border: 2px solid white;
 }
 
+.learn-btn:hover,
 .launch-btn:hover {
   background-color: var(--secondary-green);
   transition: 300ms ease-in-out;
@@ -107,13 +119,6 @@ h2 {
 .about-profile-picture {
   display: block;
   margin: 0 auto;
-  border-radius: 200px;
-  max-width: 300px;
-}
-.about-text {
-  font-family: var(--secondary-font-family);
-  font-size: 22px;
-  font-weight: 300;
-  color: white;
-  line-height: 1.7;
+  border-radius: 150px;
+  max-width: 250px;
 }
