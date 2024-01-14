@@ -36,12 +36,21 @@ h2 {
   }
 }
 
-.profile-picture {
+.index-profile-picture {
   display: block;
   margin: 0 auto;
   border-radius: 100px;
   max-width: 200px;
   margin-top: 30px;
+}
+.index-bio {
+  font-family: var(--secondary-font-family);
+  font-size: 22px;
+  font-weight: 300;
+  color: white;
+  line-height: 1.7;
+  text-align: center;
+  margin-top: 15px;
 }
 .my-projects {
   text-align: center;
@@ -90,4 +99,21 @@ h2 {
 .launch-btn:hover {
   background-color: var(--secondary-green);
   transition: 300ms ease-in-out;
+}
+
+.about-container {
+  margin-top: 30px;
+}
+.about-profile-picture {
+  display: block;
+  margin: 0 auto;
+  border-radius: 200px;
+  max-width: 300px;
+}
+.about-text {
+  font-family: var(--secondary-font-family);
+  font-size: 22px;
+  font-weight: 300;
+  color: white;
+  line-height: 1.7;
 }
