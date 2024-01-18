@@ -56,7 +56,7 @@ h2 {
   display: block;
   margin: 0 auto;
 }
-a {
+.btn-links {
   text-decoration: none;
   color: rgb(4, 117, 102);
 }
@@ -71,7 +71,8 @@ a {
   color: white;
 }
 .col-6,
-.col-8 {
+.col-8,
+.col-4 {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 60px;
@@ -122,4 +123,28 @@ a {
   margin: 0 auto;
   border-radius: 150px;
   max-width: 250px;
+}
+
+h3,
+.contact-text,
+.contact-bio {
+  text-align: center;
+}
+.contact-bio {
+  font-family: var(--secondary-font-family);
+  color: var(--salmon);
+  font-size: 20px;
+}
+h3 {
+  margin-top: 15px;
+  font-family: var(--heading-font-family);
+  font-size: 25px;
+  color: white;
+}
+.contact-text {
+  font-family: var(--secondary-font-family);
+  font-size: 20px;
+}
+.fa-contact-icons {
+  font-size: 80px;
 }
