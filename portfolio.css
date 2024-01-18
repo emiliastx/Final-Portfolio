@@ -5,7 +5,7 @@
   --secondary-green: rgb(163, 228, 208);
   --navy: rgb(7, 72, 97);
   --salmon: rgb(243, 171, 171);
-  --orange: rgb(224, 182, 42);
+  --nav-link-colour: rgb(122, 233, 181);
 }
 /*navbar*/
 .navbar {
@@ -16,7 +16,7 @@
 .nav-home {
   font-family: var(--heading-font-family);
   font-weight: 300;
-  font-size: 25px;
+  font-size: 20px;
   color: white;
 }
 .nav-home:hover,
@@ -28,13 +28,14 @@
   justify-content: end;
   font-family: var(--secondary-font-family);
   font-weight: 300;
+  font-size: 18px;
 }
 .nav-link {
   padding: 0 20px !important;
   color: white;
 }
 .active {
-  color: var(--orange);
+  color: var(--nav-link-colour) !important;
 }
 /*index*/
 body {
@@ -142,7 +143,7 @@ h2 {
 .learn-btn:hover,
 .launch-btn:hover {
   background-color: var(--secondary-green);
-  transition: 300ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 /*about*/
 .about-container {
