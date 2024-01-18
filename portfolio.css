@@ -3,6 +3,7 @@
   --secondary-font-family: "Signika", sans-serif;
   --main-green: rgb(20, 153, 135);
   --secondary-green: rgb(163, 228, 208);
+  --navy: rgb(7, 72, 97);
   --salmon: rgb(243, 171, 171);
   --orange: rgb(247, 213, 119);
 }
@@ -132,8 +133,10 @@ h3,
 }
 .contact-bio {
   font-family: var(--secondary-font-family);
-  color: var(--salmon);
+  color: var(--secondary-green);
   font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 h3 {
   margin-top: 15px;
@@ -147,4 +150,15 @@ h3 {
 }
 .fa-contact-icons {
   font-size: 80px;
+  color: var(--navy);
+  opacity: 100%;
+  margin-bottom: 10px;
+}
+.fa-contact-icons:hover {
+  color: var(--secondary-green);
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+.contact-links {
+  color: var(--secondary-green);
 }
