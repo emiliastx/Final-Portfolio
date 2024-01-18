@@ -5,9 +5,38 @@
   --secondary-green: rgb(163, 228, 208);
   --navy: rgb(7, 72, 97);
   --salmon: rgb(243, 171, 171);
-  --orange: rgb(247, 213, 119);
+  --orange: rgb(224, 182, 42);
 }
-
+/*navbar*/
+.navbar {
+  background-color: rgb(8, 129, 113);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.nav-home {
+  font-family: var(--heading-font-family);
+  font-weight: 300;
+  font-size: 25px;
+  color: white;
+}
+.nav-home:hover,
+.nav-link:hover {
+  color: white;
+  opacity: 80%;
+}
+.navbar-links {
+  justify-content: end;
+  font-family: var(--secondary-font-family);
+  font-weight: 300;
+}
+.nav-link {
+  padding: 0 20px !important;
+  color: white;
+}
+.active {
+  color: var(--orange);
+}
+/*index*/
 body {
   background-color: var(--main-green);
 }
@@ -61,7 +90,7 @@ h2 {
   text-decoration: none;
   color: rgb(4, 117, 102);
 }
-
+/*projects*/
 .my-projects {
   text-align: center;
   margin-top: 30px;
@@ -115,7 +144,7 @@ h2 {
   background-color: var(--secondary-green);
   transition: 300ms ease-in-out;
 }
-
+/*about*/
 .about-container {
   margin-top: 30px;
 }
@@ -125,7 +154,7 @@ h2 {
   border-radius: 150px;
   max-width: 250px;
 }
-
+/*contact*/
 h3,
 .contact-text,
 .contact-bio {
