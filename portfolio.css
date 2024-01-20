@@ -63,7 +63,8 @@ h2 {
   }
   h2,
   .contact-bio,
-  .about-container {
+  .about-container,
+  .index-bio {
     font-size: 20px;
     padding: 0 30px 0 30px;
   }
@@ -187,17 +188,29 @@ h3 {
   font-family: var(--secondary-font-family);
   font-size: 20px;
 }
+
 .fa-contact-icons {
   font-size: 80px;
   color: var(--navy);
-  opacity: 100%;
   margin-bottom: 10px;
 }
-.fa-contact-icons:hover {
+.fa-contact-icons:hover,
+.fa-footer-icons:hover {
   color: var(--secondary-green);
   cursor: pointer;
   transition: 200ms ease-in-out;
 }
 .contact-links {
   color: var(--secondary-green);
+}
+/*footer*/
+.fa-footer-icons {
+  color: var(--navy);
+  padding: 0 20px 0 20px;
+}
+footer {
+  margin-top: 40px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 20px;
 }
