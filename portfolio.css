@@ -207,10 +207,19 @@ h3 {
 .fa-footer-icons {
   color: var(--navy);
   padding: 0 20px 0 20px;
+  margin-bottom: 15px;
 }
 footer {
   margin-top: 40px;
   margin-bottom: 5px;
   text-align: center;
   font-size: 20px;
+}
+.footer-text {
+  font-size: 10px;
+  font-family: var(--heading-font-family);
+  color: var(--navy);
+}
+.open-sourced-link {
+  color: var(--navy);
 }
