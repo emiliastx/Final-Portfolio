@@ -1,16 +1,13 @@
 :root {
   --heading-font-family: "Poppins", sans-serif;
   --secondary-font-family: "Signika", sans-serif;
-  --main-green: rgb(20, 153, 135);
-  --secondary-green: rgb(163, 228, 208);
-  --navy: rgb(7, 72, 97);
-  --salmon: rgb(243, 171, 171);
-  --nav-link-colour: rgb(122, 233, 181);
-  --nav-colour: rgb(8, 129, 113);
+  --english-violet: #654f6f;
+  --pink-lavender: #e6c0e9;
+  --celadon: #a8c69f;
+  --blue-munsell: #3891a6;
 }
 /*navbar*/
 .navbar {
-  background-color: var(--nav-colour);
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -18,11 +15,11 @@
   font-family: var(--heading-font-family);
   font-weight: 300;
   font-size: 20px;
-  color: white;
+  color: var(--pink-lavender);
 }
 .nav-home:hover,
 .nav-link:hover {
-  color: white;
+  color: var(--celadon);
   opacity: 80%;
 }
 .navbar-links {
@@ -33,56 +30,63 @@
 }
 .nav-link {
   padding: 0 20px !important;
-  color: white;
+  color: var(--pink-lavender);
 }
 .active {
-  color: var(--nav-link-colour) !important;
+  color: var(--celadon) !important;
 }
 /*index*/
+
 body {
-  background-color: var(--main-green);
+  background-color: var(--english-violet);
 }
+
+.container-2 {
+  background-color: var(--pink-lavender);
+}
+
 h1 {
-  padding-top: 30px;
+  padding-top: 70px;
   text-align: center;
   font-family: var(--heading-font-family);
-  font-size: 100px;
+  font-size: 80px;
   color: white;
   font-weight: 100;
 }
-h2 {
-  text-align: center;
-  color: var(--secondary-green);
-  font-family: var(--heading-font-family);
-  font-weight: 500;
-  font-size: 30px;
+
+h2.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.1em; /* Adjust as needed */
+  width: fit-content; /* Ensures the width of the h2 adjusts to the content */
+  animation: typing 6s steps(40, end), blink-caret 0.75s step-end infinite;
 }
-@media (max-width: 600px) {
-  h1 {
-    font-size: 70px;
-    padding: 30px 20px 0 20px;
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
   }
-  h2,
-  .contact-bio,
-  .about-container,
-  .index-bio {
-    font-size: 20px;
-    padding: 0 30px 0 30px;
+  to {
+    width: 100%;
   }
 }
 
-.index-profile-picture {
-  display: block;
-  margin: 0 auto;
-  border-radius: 130px;
-  max-width: 250px;
-  margin-top: 30px;
+h2 {
+  text-align: center;
+  color: var(--celadon);
+  font-family: var(--heading-font-family);
+  font-weight: 400;
+  font-size: 40px;
 }
+
 .index-bio {
   font-family: var(--secondary-font-family);
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 300;
-  color: white;
+  color: var(--pink-lavender);
   line-height: 1.7;
   text-align: center;
   margin-top: 15px;
@@ -90,16 +94,20 @@ h2 {
 .learn-btn {
   display: block;
   margin: 0 auto;
+  background-color: var(--pink-lavender);
+  border: 1px solid white;
 }
 .btn-links {
   text-decoration: none;
-  color: rgb(4, 117, 102);
+  color: var(--english-violet);
 }
+
 /*projects*/
 .project-container {
   margin-top: 40px;
   padding-top: 40px;
-  background-color: rgb(182, 230, 216);
+  background-color: white;
+  max-width: 100%;
 }
 .col-6,
 .col-8,
@@ -149,11 +157,7 @@ h2 {
   font-family: var(--heading-font-family);
   border-radius: 4px;
 }
-.learn-btn {
-  background-color: var(--salmon);
-  color: rgb(4, 117, 102);
-  border: 2px solid white;
-}
+
 .launch-btn {
   background-color: var(--main-green);
   border: 2px solid var(--main-green);
@@ -168,10 +172,18 @@ h2 {
   transition: 200ms ease-in-out;
 }
 .learn-btn:hover {
-  background-color: var(--secondary-green);
+  opacity: 75%;
   transition: 200ms ease-in-out;
 }
+
 /*about*/
+
+.about-section-1 {
+  max-width: 100%;
+}
+.about-section-2 {
+  margin-top: 30px;
+}
 .about-container {
   margin-top: 30px;
 }
@@ -189,7 +201,7 @@ h3,
 }
 .contact-bio {
   font-family: var(--secondary-font-family);
-  color: var(--secondary-green);
+  color: var(--pink-lavender);
   font-size: 25px;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -208,21 +220,21 @@ h3 {
 
 .fa-contact-icons {
   font-size: 80px;
-  color: var(--navy);
+  color: var(--blue-munsell);
   margin-bottom: 10px;
 }
 .fa-contact-icons:hover,
 .fa-footer-icons:hover {
-  color: var(--secondary-green);
+  color: var(--celadon);
   cursor: pointer;
   transition: 200ms ease-in-out;
 }
 .contact-links {
-  color: var(--secondary-green);
+  color: var(--pink-lavender);
 }
 /*footer*/
 .fa-footer-icons {
-  color: var(--navy);
+  color: var(--celadon);
   padding: 0 20px 0 20px;
   margin-bottom: 15px;
 }
@@ -235,8 +247,23 @@ footer {
 .footer-text {
   font-size: 15px;
   font-family: var(--heading-font-family);
-  color: var(--navy);
+  color: var(--pink-lavender);
 }
 .open-sourced-link {
-  color: var(--navy);
+  color: var(--pink-lavender);
+}
+
+/* responsiveness */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 70px;
+    padding: 30px 20px 0 20px;
+  }
+  h2,
+  .contact-bio,
+  .about-container,
+  .index-bio {
+    font-size: 20px;
+    padding: 0 30px 0 30px;
+  }
 }
