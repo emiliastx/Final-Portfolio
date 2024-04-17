@@ -37,8 +37,21 @@
 }
 /*index*/
 
+canvas {
+  position: fixed; /* or absolute */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure the canvas is behind the content */
+}
+
 body {
   background-color: var(--english-violet);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.home-container {
+  flex: 1;
 }
 
 .container-2 {
@@ -56,12 +69,11 @@ h1 {
 
 h2.typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.1em; /* Adjust as needed */
+  letter-spacing: 0.08em; /* Adjust as needed */
   width: fit-content; /* Ensures the width of the h2 adjusts to the content */
-  animation: typing 6s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 6s steps(39, end), step-end infinite;
 }
 
 /* The typing effect */
@@ -79,12 +91,12 @@ h2 {
   color: var(--celadon);
   font-family: var(--heading-font-family);
   font-weight: 400;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .index-bio {
-  font-family: var(--secondary-font-family);
-  font-size: 20px;
+  font-family: var(--heading-font-family);
+  font-size: 25px;
   font-weight: 300;
   color: var(--pink-lavender);
   line-height: 1.7;
@@ -94,11 +106,22 @@ h2 {
 .learn-btn {
   display: block;
   margin: 0 auto;
-  background-color: var(--pink-lavender);
+  background-color: var(--english-violet);
   border: 1px solid white;
+  font-size: 20px;
+  padding: 5px 15px;
+  margin-top: 20px;
+  font-family: var(--heading-font-family);
 }
 .btn-links {
   text-decoration: none;
+  color: var(--pink-lavender);
+}
+.learn-btn:hover {
+  background-color: var(--pink-lavender);
+  transition: 300ms ease-in-out;
+}
+.btn-links:hover {
   color: var(--english-violet);
 }
 
@@ -150,13 +173,6 @@ h2 {
 .project-text {
   color: rgb(56, 87, 112);
 }
-.learn-btn,
-.launch-btn {
-  margin-top: 10px;
-  padding: 5px 10px 5px 10px;
-  font-family: var(--heading-font-family);
-  border-radius: 4px;
-}
 
 .launch-btn {
   background-color: var(--main-green);
@@ -169,10 +185,6 @@ h2 {
 .launch-btn:hover {
   background-color: var(--nav-colour);
   border: 2px solid var(--nav-colour);
-  transition: 200ms ease-in-out;
-}
-.learn-btn:hover {
-  opacity: 75%;
   transition: 200ms ease-in-out;
 }
 
@@ -238,7 +250,12 @@ h3 {
   padding: 0 20px 0 20px;
   margin-bottom: 15px;
 }
+.fa-footer-icons:hover {
+  color: var(--blue-munsell);
+}
+
 footer {
+  margin-top: auto;
   margin-top: 40px;
   margin-bottom: 5px;
   text-align: center;
@@ -259,7 +276,11 @@ footer {
     font-size: 70px;
     padding: 30px 20px 0 20px;
   }
-  h2,
+  h2 {
+    padding: 0 30px 0 30px;
+    font-size: 40px;
+  }
+
   .contact-bio,
   .about-container,
   .index-bio {
