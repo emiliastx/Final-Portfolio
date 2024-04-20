@@ -52,8 +52,8 @@ body {
 }
 .home-container {
   flex: 1;
+  text-align: center; /* Center text horizontally */
 }
-
 .container-2 {
   background-color: var(--pink-lavender);
 }
@@ -65,6 +65,33 @@ h1 {
   font-size: 80px;
   color: white;
   font-weight: 100;
+  position: relative;
+  display: block; /* Change display to block */
+  margin: 0 auto; /* Center horizontally */
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: var(--celadon);
+  animation: underline 10s infinite;
+}
+
+@keyframes underline {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 30%;
+  }
+  100% {
+    width: 0%;
+  }
 }
 
 h2.typewriter {
