@@ -346,13 +346,15 @@ footer {
 }
 
 @media only screen and (min-device-width: 1920px) and (min-device-height: 1080px) {
-  body {
-    font-size: 150%;
-  }
-}
-
-/*.nav-home {
+  .nav-home {
     font-size: 30px;
+  }
+  .navbar {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .nav-link {
+    padding: 0 30px !important;
   }
   .navbar-links {
     font-weight: 300;
@@ -360,10 +362,18 @@ footer {
   }
   h1 {
     font-size: 120px;
+    padding-top: 105px;
   }
   h2 {
     font-size: 75px;
   }
   .index-bio {
     font-size: 38px;
-  }*/
+    margin-top: 22px;
+  }
+  .index-btn {
+    font-size: 30px;
+    padding: 7px 22px;
+    margin-top: 30px;
+  }
+}
