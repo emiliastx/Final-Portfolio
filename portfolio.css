@@ -344,3 +344,22 @@ footer {
     }
   }
 }
+
+@media only screen and (min-device-width: 1920px) and (min-device-height: 1080px) {
+  .nav-home {
+    font-size: 30px;
+  }
+  .navbar-links {
+    font-weight: 300;
+    font-size: 28px;
+  }
+  h1 {
+    font-size: 120px;
+  }
+  h2 {
+    font-size: 75px;
+  }
+  .index-bio {
+    font-size: 38px;
+  }
+}
