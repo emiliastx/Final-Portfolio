@@ -373,7 +373,7 @@ footer {
     font-size: 75px;
   }
   h2.typewriter {
-    animation: typing 4s steps(20, end), step-end infinite;
+    animation: typing 6s steps(60, end), step-end infinite;
   }
   .index-bio {
     font-size: 38px;
