@@ -368,10 +368,11 @@ footer {
   h1 {
     font-size: 120px;
     padding-top: 120px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
   }
   h2 {
     font-size: 75px;
+    padding-bottom: 8px;
   }
   h2.typewriter {
     animation: typing 6s steps(55, end), step-end infinite;
