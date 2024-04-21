@@ -74,30 +74,6 @@ h1 {
   margin: 0 auto; /* Center horizontally */
 }
 
-.underline::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 0%;
-  height: 2px;
-  background-color: var(--celadon);
-  animation: underline 4s;
-}
-
-@keyframes underline {
-  0% {
-    width: 0%;
-  }
-  50% {
-    width: 30%;
-  }
-  100% {
-    width: 0%;
-  }
-}
-
 h2.typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -156,55 +132,28 @@ h2 {
   color: var(--english-violet);
 }
 
-/*projects*/
-
-.project-h2 {
-  padding-top: 10px;
-  font-size: 20px;
-  color: var(--blue-munsell);
-}
-.down-icon {
-  text-align: center;
-  color: var(--blue-munsell);
-}
-.col-6,
-.col-8,
-.col-4,
-.col-sm-4,
-.col-sm-8 {
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 60px;
-}
-.project-container-1 {
-  background-color: #f9e6fa;
-}
-.project-image:hover {
-  cursor: pointer;
-  border: 3px solid white;
-}
-.project-link {
-  text-decoration: none;
-  color: var(--blue-munsell);
-  display: inline-block;
-  font-size: 28px;
-}
-.project-heading:hover {
-  color: #29788a;
-  transition: ease-in-out;
-}
-
-.project-link img {
-  max-width: 100%;
-  height: auto;
-}
-.card-text {
-  font-family: var(--secondary-font-family);
-  text-align: center;
-  font-weight: 100;
-}
-
 /*about*/
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: var(--celadon);
+  animation: underline 4s;
+}
+
+@keyframes underline {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 110%;
+  }
+}
 
 .about-container {
   margin-top: 30px;
@@ -238,6 +187,55 @@ h2 {
 .see-work a:hover {
   color: var(--celadon);
   border: 2px solid var(--celadon);
+}
+
+/*projects*/
+
+.project-h2 {
+  padding-top: 10px;
+  font-size: 20px;
+  color: var(--blue-munsell);
+}
+.down-icon {
+  text-align: center;
+  color: var(--blue-munsell);
+}
+.col-6,
+.col-8,
+.col-4,
+.col-sm-4,
+.col-sm-8 {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.project-container-1 {
+  background-color: #f9e6fa;
+}
+.project-image:hover {
+  cursor: pointer;
+  border: 3px solid white;
+}
+.project-link {
+  text-decoration: none;
+  color: var(--blue-munsell);
+  display: inline-block;
+  font-size: 24px;
+}
+.project-heading:hover {
+  color: #29788a;
+  transition: ease-in-out;
+}
+
+.project-link img {
+  max-width: 100%;
+  height: auto;
+}
+.card-text {
+  font-family: var(--secondary-font-family);
+  text-align: center;
+  font-weight: 100;
+  font-size: 17px;
 }
 
 /*contact*/
@@ -282,6 +280,7 @@ h3 {
   color: var(--pink-lavender);
 }
 /*footer*/
+
 .fa-footer-icons {
   color: var(--celadon);
   padding: 0 20px 0 20px;
@@ -375,5 +374,79 @@ footer {
     font-size: 30px;
     padding: 7px 22px;
     margin-top: 30px;
+    border: 2px;
+  }
+
+  /* about */
+
+  .about-container {
+    margin-top: 45px;
+  }
+  .about-profile-picture {
+    border-radius: 150px;
+    max-width: 400px;
+    border: 6px solid;
+  }
+  .description-text {
+    font-size: 36px;
+
+    line-height: 1.8;
+  }
+  .see-work {
+    margin-top: 30px;
+  }
+  .see-work a {
+    font-size: 30px;
+    border: 2px solid;
+    padding: 15px;
+  }
+  .see-work a:hover {
+    border: 3px solid;
+  }
+
+  /* projects */
+  .project-h2 {
+    padding-top: 15px;
+    font-size: 30px;
+  }
+  .project-link {
+    font-size: 36px;
+  }
+  .card-text {
+    font-size: 25px;
+  }
+  /* contact */
+
+  .contact-bio {
+    font-size: 37px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 0 60px 0 60px;
+    color: var(--pink-lavender);
+  }
+  h3 {
+    margin-top: 25px;
+
+    font-size: 45px;
+  }
+  .contact-text {
+    font-size: 37px;
+  }
+
+  /* footer */
+
+  .fa-footer-icons {
+    padding: 0 30px 0 30px;
+    margin-bottom: 23px;
+  }
+
+  footer {
+    margin-top: auto;
+    margin-top: 60px;
+    margin-bottom: 7px;
+    font-size: 37px;
+  }
+  .footer-text {
+    font-size: 23px;
   }
 }

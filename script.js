@@ -17,6 +17,17 @@ for (let i = 0; i < 100; i++) {
   });
 }
 
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  // Adjust star size based on screen width
+  const screenWidth = window.innerWidth;
+  for (const star of stars) {
+    star.radius = Math.random() * (screenWidth > 1200 ? 3 : 1.5) + 1;
+  }
+}
+
 // Draw function
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
