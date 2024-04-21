@@ -34,7 +34,7 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top project-navbar">
       <a class="navbar-brand nav-home" title="Home" href="index.html"
         ><i class="fa-solid fa-house"></i
       ></a>
@@ -72,81 +72,77 @@
         </div>
       </div>
     </nav>
-    <h1>My Projects</h1>
+    <h1>Projects</h1>
 
-    <div class="container project-container">
-      <div class="row">
-        <div class="col-6 text-col">
-          <div class="project-title">Colour Flipper</div>
-          <div class="project-text">
-            A simple app, developed using HTML, CSS and Vanilla JavaScript. When
-            the button is clicked, a random colour will be assigned to the
-            background.
+    <section class="project-container-1 my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="project-h2 mt-3">
+              Take a look at some of my work below
+            </h2>
           </div>
-          <button class="launch-btn">
-            <a href="https://colourflipperapp.netlify.app/" target="_blank"
-              >Launch</a
-            >
-          </button>
-        </div>
-        <div class="col-6 d-none d-md-block">
-          <a href="https://colourflipperapp.netlify.app/" target="_blank"
-            ><img
-              src="images/colourflipper.PNG"
-              class="project-img"
-              alt="weather project - Emilia de St Croix"
-          /></a>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-6 d-none d-md-block">
-          <a href="https://emilia-weather-react.netlify.app/" target="_blank"
-            ><img
-              src="images/reactweatherapp.PNG"
-              class="project-img"
-              alt="weather project - Emilia de St Croix"
-          /></a>
-        </div>
-        <div class="col-6 text-col">
-          <div class="project-title">React Weather Application</div>
-          <div class="project-text">
-            Retained the original design of my first weather app (see below),
-            while migrating the code to React. This involved implementing a
-            component-based structure, state management and many other
-            processes.
+          <div class="col-md-6 col-lg-4">
+            <div class="card my-3">
+              <img
+                src="images/reactweatherapp.PNG"
+                class="card-image-top project-image"
+                alt="thumbnail"
+              />
+
+              <div class="card-body">
+                <h3>
+                  <a href="#" class="project-link">Weather App</a>
+                </h3>
+                <p class="card-text">
+                  A simple weather application, built using React.
+                </p>
+              </div>
+            </div>
           </div>
-          <button class="launch-btn">
-            <a href="https://emilia-weather-react.netlify.app/" target="_blank"
-              >Launch</a
-            >
-          </button>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card my-3">
+              <img
+                src="images/carpentrythumbnail.PNG"
+                class="card-image-top project-image"
+                alt="thumbnail"
+              />
+
+              <div class="card-body">
+                <h3>
+                  <a href="#" class="project-link">Tom's Carpentry</a>
+                </h3>
+                <p class="card-text">
+                  A business site I built for a local carpenter and cabinet
+                  maker.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card my-3">
+              <img
+                src="https://images.pexels.com/photos/2343170/pexels-photo-2343170.jpeg"
+                class="card-image-top"
+                alt="thumbnail"
+              />
+              <div class="card-body">
+                <h3>
+                  <a href="#" class="project-link">Dog Cafe</a>
+                </h3>
+                <p class="card-text">
+                  Pellentesque dictum consequat tincidunt. Sed tincidunt tortor
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-6 text-col">
-          <div class="project-title">Weather Application</div>
-          <div class="project-text">
-            Developed using HTML, CSS and Vanilla JavaScript. The project
-            involved integrating a weather API to fetch real-time weather data
-            and dynamically update the user interface.
-          </div>
-          <button class="launch-btn">
-            <a href="https://emilia-weather-page.netlify.app/" target="_blank"
-              >Launch</a
-            >
-          </button>
-        </div>
-        <div class="col-6 d-none d-md-block">
-          <a href="https://emilia-weather-page.netlify.app/" target="_blank"
-            ><img
-              src="images/weatherapp.PNG"
-              class="project-img"
-              alt="weather project - Emilia de St Croix"
-          /></a>
-        </div>
-      </div>
-    </div>
+    </section>
+
     <footer>
       <a href="mailto:emilia@destcroix.com" target="_blank" title="Email"
         ><i class="fa-regular fa-envelope fa-footer-icons"></i

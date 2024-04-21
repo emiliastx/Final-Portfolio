@@ -35,6 +35,10 @@
 .active {
   color: var(--celadon) !important;
 }
+.project-navbar {
+  background-color: var(--english-violet);
+}
+
 /*index*/
 
 canvas {
@@ -79,7 +83,7 @@ h1 {
   width: 0%;
   height: 2px;
   background-color: var(--celadon);
-  animation: underline 10s infinite;
+  animation: underline 4s;
 }
 
 @keyframes underline {
@@ -153,11 +157,10 @@ h2 {
 }
 
 /*projects*/
-.project-container {
-  margin-top: 40px;
-  padding-top: 40px;
-  background-color: white;
-  max-width: 100%;
+
+.project-h2 {
+  font-size: 20px;
+  color: var(--blue-munsell);
 }
 .col-6,
 .col-8,
@@ -168,51 +171,21 @@ h2 {
   text-align: center;
   margin-bottom: 60px;
 }
-
-.project-img {
-  max-width: 400px;
-  border-radius: 10px;
-  width: 100%;
-  height: auto;
-  box-shadow: 5px 5px 5px rgb(4, 63, 53, 0.5);
+.project-container-1 {
+  background-color: #f9e6fa;
 }
-.project-img:hover {
+.project-image:hover {
   cursor: pointer;
-  box-shadow: 1px 1px 5px 5px rgb(4, 63, 53, 0.5);
+  border: 3px solid white;
 }
-.project-title {
-  font-family: var(--heading-font-family);
-  font-size: 30px;
-  font-weight: 500;
-  color: var(--navy);
-  margin-bottom: 10px;
-}
-.description-text,
-.project-text {
-  font-family: var(--secondary-font-family);
-  font-size: 23px;
-  font-weight: 300;
-  line-height: 1.7;
-}
-.description-text {
-  color: white;
-}
-.project-text {
-  color: rgb(56, 87, 112);
-}
-
-.launch-btn {
-  background-color: var(--main-green);
-  border: 2px solid var(--main-green);
-}
-.launch-btn a {
+.project-link {
   text-decoration: none;
-  color: white;
+  color: var(--blue-munsell);
 }
-.launch-btn:hover {
-  background-color: var(--nav-colour);
-  border: 2px solid var(--nav-colour);
-  transition: 200ms ease-in-out;
+.card-text {
+  font-family: var(--secondary-font-family);
+  text-align: center;
+  font-weight: 100;
 }
 
 /*about*/
@@ -220,6 +193,7 @@ h2 {
 .about-section-1 {
   max-width: 100%;
 }
+
 .about-section-2 {
   margin-top: 30px;
 }
@@ -232,7 +206,16 @@ h2 {
   border-radius: 150px;
   max-width: 250px;
 }
+.description-text {
+  font-family: var(--secondary-font-family);
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--pink-lavender);
+}
+
 /*contact*/
+
 h3,
 .contact-text,
 .contact-bio {
