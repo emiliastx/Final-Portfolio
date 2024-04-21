@@ -346,7 +346,14 @@ footer {
 }
 
 @media only screen and (min-device-width: 1920px) and (min-device-height: 1080px) {
-  .nav-home {
+  body {
+    margin: 150%;
+    font-size: 150%;
+    padding: 150%;
+  }
+}
+
+/*.nav-home {
     font-size: 30px;
   }
   .navbar-links {
@@ -361,5 +368,4 @@ footer {
   }
   .index-bio {
     font-size: 38px;
-  }
-}
+  }*/
