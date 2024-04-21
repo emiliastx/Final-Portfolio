@@ -345,12 +345,15 @@ footer {
 }
 
 @media only screen and (min-device-width: 1920px) and (min-device-height: 1080px) {
+  /* navbar */
+
   .nav-home {
     font-size: 30px;
   }
   .navbar {
     padding-left: 45px;
     padding-right: 45px;
+    padding-top: 20px;
   }
   .nav-link {
     padding: 0 30px !important;
@@ -359,12 +362,18 @@ footer {
     font-weight: 300;
     font-size: 28px;
   }
+
+  /* index */
+
   h1 {
     font-size: 120px;
-    padding-top: 105px;
+    padding-top: 120px;
   }
   h2 {
     font-size: 75px;
+  }
+  h2.typewriter {
+    animation: typing 3s steps(25, end), step-end infinite;
   }
   .index-bio {
     font-size: 38px;
@@ -374,7 +383,7 @@ footer {
     font-size: 30px;
     padding: 7px 22px;
     margin-top: 30px;
-    border: 2px;
+    border: 2px solid var(--pink-lavender);
   }
 
   /* about */
@@ -383,13 +392,12 @@ footer {
     margin-top: 45px;
   }
   .about-profile-picture {
-    border-radius: 150px;
+    border-radius: 250px;
     max-width: 400px;
-    border: 6px solid;
+    border: 6px double var(--celadon);
   }
   .description-text {
     font-size: 36px;
-
     line-height: 1.8;
   }
   .see-work {
@@ -405,6 +413,7 @@ footer {
   }
 
   /* projects */
+
   .project-h2 {
     padding-top: 15px;
     font-size: 30px;
@@ -415,6 +424,7 @@ footer {
   .card-text {
     font-size: 25px;
   }
+
   /* contact */
 
   .contact-bio {
@@ -422,15 +432,16 @@ footer {
     margin-bottom: 30px;
     margin-top: 30px;
     padding: 0 60px 0 60px;
-    color: var(--pink-lavender);
   }
   h3 {
     margin-top: 25px;
-
     font-size: 45px;
   }
   .contact-text {
     font-size: 37px;
+  }
+  .fa-contact-icons {
+    font-size: 120px;
   }
 
   /* footer */

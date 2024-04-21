@@ -17,6 +17,7 @@ for (let i = 0; i < 100; i++) {
   });
 }
 
+// Function to resize canvas and stars based on screen size
 function resizeCanvas() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
@@ -58,3 +59,6 @@ function draw() {
 
 // Start animation
 draw();
+
+// Resize canvas and stars when the window is resized
+window.addEventListener("resize", resizeCanvas);
