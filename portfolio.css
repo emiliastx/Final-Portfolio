@@ -347,9 +347,7 @@ footer {
 
 @media only screen and (min-device-width: 1920px) and (min-device-height: 1080px) {
   body {
-    margin: 150%;
     font-size: 150%;
-    padding: 150%;
   }
 }
 
